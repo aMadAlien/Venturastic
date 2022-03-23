@@ -1,0 +1,336 @@
+/* обнуление ститей */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/* обнуление ститей */
+.wrapper {
+  min-width: 1440px;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .content {
+  flex: 1 1 auto;
+}
+.wrapper .content .container {
+  width: 1440px;
+  margin: 0 auto;
+}
+.wrapper .content .container .header {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  background: #fff;
+  height: 134px;
+}
+.wrapper .content .container .header .header__row {
+  padding: 13px 56px;
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper .content .container .header .header__row .header__img {
+  width: 133px;
+  height: 108px;
+}
+.wrapper .content .container .header .header__row nav {
+  /**********стили навигации в header**********/
+  display: flex;
+}
+.wrapper .content .container .header .header__row nav a {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 22.4px;
+  letter-spacing: 0.85px;
+  text-transform: uppercase;
+  margin: 50px 18px;
+  color: #4d4d4d;
+  transition: all 0.5s linear;
+}
+.wrapper .content .container .header .header__row nav a:hover {
+  /* стили для кнопок навигации в header при наведении */
+  color: #009CC4;
+  transform: scale(1.1);
+  -webkit-text-stroke: 1px #009CC4;
+  text-shadow: 1px 3px 5px #044758;
+}
+.wrapper .content .container .header .header__row nav a:nth-child(4) {
+  /* стили для кнопки навигации в header, страница которой включена */
+  font-size: 18px;
+  color: #009CC4;
+  -webkit-text-stroke: 1px #009CC4;
+  text-shadow: 1px 3px 10px #044758;
+}
+.wrapper .content .container .header .header__row nav a:hover:nth-child(4) {
+  /* для навигации header и footer */
+  transform: none;
+  cursor: default;
+}
+.wrapper .content .container .special {
+  position: relative;
+  height: 540px;
+}
+.wrapper .content .container .special img {
+  width: 1440px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.wrapper .content .container .special .special__title {
+  font-family: 'Unna';
+  font-size: 62px;
+  line-height: 74px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  padding: 224px 130px 250px 580px;
+}
+.wrapper .content .container .main .text {
+  height: 340px;
+}
+.wrapper .content .container .main .text .text__row {
+  padding: 100px 130px;
+}
+.wrapper .content .container .main .text .text__row p {
+  font-family: 'Unna';
+  font-size: 36px;
+  line-height: 48px;
+  text-align: justify;
+  color: #4d4d4d;
+}
+.wrapper .content .container .main .block_title {
+  font-family: 'Unna';
+  font-size: 36px;
+  line-height: 48px;
+  color: #4d4d4d;
+  padding: 0 0 18px 0;
+}
+.wrapper .content .container .main .block_subtitle {
+  font-family: 'Unna';
+  font-size: 24px;
+  line-height: 24px;
+  text-align: justify;
+  padding: 0 0 0 40px;
+  color: #4d4d4d;
+}
+.wrapper .content .container .main .block_text {
+  font-family: 'TP Serif';
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+  color: #4d4d4d;
+}
+.wrapper .content .container .main .block_text p {
+  padding: 0 10px 40px 40px;
+}
+.wrapper .content .container .main .block_items {
+  display: flex;
+}
+.wrapper .content .container .main .block_item {
+  width: 2px;
+  display: block;
+  height: 66px;
+  background: #009CC4;
+}
+.wrapper .content .container .main img {
+  width: 560px;
+  height: 400px;
+}
+.wrapper .content .container .main .block1 {
+  height: 700px;
+  background: #F3F0E9;
+}
+.wrapper .content .container .main .block1 .row {
+  display: flex;
+  padding: 100px 130px;
+}
+.wrapper .content .container .main .block1 .row .info {
+  padding: 0 147px 0 0;
+}
+.wrapper .content .container .main .block1 .row .info .title {
+  font-family: 'Unna';
+  font-size: 36px;
+  line-height: 48px;
+  color: #4d4d4d;
+  padding: 0 0 18px 0;
+}
+.wrapper .content .container .main .block1 .row .info .items {
+  display: flex;
+}
+.wrapper .content .container .main .block1 .row .info .items .item {
+  width: 2px;
+  display: block;
+  height: 66px;
+  background: #009CC4;
+}
+.wrapper .content .container .main .block1 .row .info .items .subtitle {
+  font-family: 'Unna';
+  font-size: 24px;
+  line-height: 24px;
+  text-align: justify;
+  padding: 0 0 0 40px;
+  color: #4d4d4d;
+}
+.wrapper .content .container .main .block1 .row .info .text {
+  font-family: 'TP Serif';
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+  color: #4d4d4d;
+}
+.wrapper .content .container .main .block1 .row .info .text p {
+  padding: 0 10px 40px 40px;
+}
+.wrapper .content .container .main .block2 {
+  height: 600px;
+}
+.wrapper .content .container .main .block2 .row {
+  display: flex;
+  padding: 100px 130px;
+}
+.wrapper .content .container .main .block2 .row .info {
+  padding: 0 0 0 147px;
+}
+.wrapper .content .container .main .block2 .row .info .title {
+  font-family: 'Unna';
+  font-size: 36px;
+  line-height: 48px;
+  color: #4d4d4d;
+  padding: 0 0 18px 0;
+}
+.wrapper .content .container .main .block2 .row .info .items {
+  display: flex;
+}
+.wrapper .content .container .main .block2 .row .info .items .item {
+  width: 2px;
+  display: block;
+  height: 66px;
+  background: #009CC4;
+}
+.wrapper .content .container .main .block2 .row .info .items .text {
+  font-family: 'TP Serif';
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+  color: #4d4d4d;
+}
+.wrapper .content .container .main .block2 .row .info .items .text p {
+  padding: 0 10px 40px 40px;
+}
+.wrapper .content .container .end {
+  height: 337px;
+}
+.wrapper .content .container .end .end__block {
+  background-color: #39363D;
+  padding: 80px 164px;
+  font-family: 'Unna';
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 41px;
+}
+.wrapper .content .container .end .end__block .end__row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 30px 0;
+}
+.wrapper .content .container .end .end__block .end__row .end__img {
+  width: 81px;
+  height: 66px;
+}
+.wrapper .content .container .end .end__block .end__row nav a {
+  color: #fff;
+  padding: 0 0 0 50px;
+}
+.wrapper .content .container .end .end__block .end__row2 {
+  color: #f2f2f2;
+  text-align: center;
+}
+.wrapper .content .container .end .end__block .end__row2 .row__c {
+  padding: 0 16px;
+  border-right: 1px solid #fff;
+}
+.wrapper .content .container .end .end__block .end__row2 .row__c:last-child {
+  border: none;
+}
+.wrapper .content .container .footer {
+  height: 65px;
+}
+.wrapper .content .container .footer .footer__row {
+  padding: 12px 164px;
+  background-color: #181818;
+  color: #fff;
+  font-family: 'Unna';
+  font-size: 16px;
+  line-height: 41px;
+  display: flex;
+  justify-content: space-between;
+}

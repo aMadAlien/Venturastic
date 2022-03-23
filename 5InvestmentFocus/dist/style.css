@@ -1,0 +1,387 @@
+/* обнуление ститей */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/* обнуление ститей */
+.blue__item {
+  width: 2px;
+  display: block;
+  height: 66px;
+  background: #009CC4;
+  flex: 0 0 2px;
+}
+.big_title {
+  font-family: 'Unna';
+  font-size: 36px;
+  line-height: 48px;
+  text-align: justify;
+  columns: #4d4d4d;
+}
+.s_text {
+  font-family: 'PT Serif';
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+  color: #696767;
+}
+.wrapper {
+  min-width: 1440px;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .content {
+  flex: 1 1 auto;
+}
+.wrapper .content .container {
+  width: 1440px;
+  margin: 0 auto;
+}
+.wrapper .content .container .header {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  background: #fff;
+  height: 134px;
+}
+.wrapper .content .container .header .header__row {
+  padding: 13px 56px;
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper .content .container .header .header__row .header__img {
+  width: 133px;
+  height: 108px;
+}
+.wrapper .content .container .header .header__row nav {
+  /**********стили навигации в header**********/
+  display: flex;
+}
+.wrapper .content .container .header .header__row nav a {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 22.4px;
+  letter-spacing: 0.85px;
+  text-transform: uppercase;
+  margin: 50px 18px;
+  color: #4d4d44;
+  transition: all 0.5s linear;
+}
+.wrapper .content .container .header .header__row nav a:hover {
+  /* стили для кнопок навигации в header при наведении */
+  color: #009CC4;
+  transform: scale(1.1);
+  -webkit-text-stroke: 1px #009CC4;
+  text-shadow: 1px 3px 5px #044758;
+}
+.wrapper .content .container .special {
+  position: relative;
+  height: 540px;
+}
+.wrapper .content .container .special img {
+  width: 1440px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.wrapper .content .container .special .special__title {
+  font-family: 'Unna';
+  font-size: 62px;
+  line-height: 74px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  padding: 240px 190px 235px 667px;
+}
+.wrapper .content .container .block1 .container {
+  padding: 100px 130px 130px;
+}
+.wrapper .content .container .block1 .container .title {
+  font-family: 'Unna';
+  font-size: 36px;
+  line-height: 48px;
+  text-align: justify;
+  columns: #4d4d4d;
+  text-align: center;
+}
+.wrapper .content .container .block1 .container .row1 {
+  height: 850px;
+  margin: 75px 0;
+  position: relative;
+}
+.wrapper .content .container .block1 .container .row1:last-child {
+  margin: 75px 0 0 0;
+}
+.wrapper .content .container .block1 .container .row1 img {
+  width: 560px;
+  height: 850px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.wrapper .content .container .block1 .container .row1 .info1 {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  top: 50px;
+  z-index: 1;
+  width: 750px;
+  height: 750px;
+  background-color: rgba(77, 77, 77, 0.8);
+  border-radius: 12px;
+  padding: 0 50px;
+}
+.wrapper .content .container .block1 .container .row1 .info1 .title {
+  font-family: 'Unna';
+  font-size: 36px;
+  line-height: 48px;
+  text-align: justify;
+  columns: #4d4d4d;
+  color: #fff;
+}
+.wrapper .content .container .block1 .container .row1 .info1 .subrow {
+  display: flex;
+}
+.wrapper .content .container .block1 .container .row1 .info1 .subrow .item {
+  width: 2px;
+  display: block;
+  height: 66px;
+  background: #009CC4;
+  flex: 0 0 2px;
+  margin: 40px 0 0 0;
+}
+.wrapper .content .container .block1 .container .row1 .info1 .subrow .text .title {
+  font-family: 'PT Serif';
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+  color: #696767;
+  font-size: 24px;
+  line-height: 33px;
+  color: #fff;
+  padding: 40px 0 0 40px;
+}
+.wrapper .content .container .block1 .container .row1 .info1 .subrow .text p {
+  font-family: 'PT Serif';
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+  color: #696767;
+  color: #fff;
+  padding: 40px 0 0 40px;
+}
+.wrapper .content .container .block1 .container .row2 {
+  height: 850px;
+  margin: 75px 0;
+  position: relative;
+}
+.wrapper .content .container .block1 .container .row2 img {
+  width: 560px;
+  height: 850px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.wrapper .content .container .block1 .container .row2 .info2 {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  top: 50px;
+  left: 430px;
+  z-index: 1;
+  width: 750px;
+  height: 750px;
+  background-color: rgba(77, 77, 77, 0.8);
+  border-radius: 12px;
+  padding: 0 50px;
+}
+.wrapper .content .container .block1 .container .row2 .info2 .title {
+  font-family: 'Unna';
+  font-size: 36px;
+  line-height: 48px;
+  text-align: justify;
+  columns: #4d4d4d;
+  color: #fff;
+}
+.wrapper .content .container .block1 .container .row2 .info2 .subrow {
+  display: flex;
+}
+.wrapper .content .container .block1 .container .row2 .info2 .subrow .item {
+  width: 2px;
+  display: block;
+  height: 66px;
+  background: #009CC4;
+  flex: 0 0 2px;
+  margin: 40px 0 0 0;
+}
+.wrapper .content .container .block1 .container .row2 .info2 .subrow .text .title {
+  font-family: 'PT Serif';
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+  color: #696767;
+  font-size: 24px;
+  line-height: 33px;
+  color: #fff;
+  padding: 40px 0 0 40px;
+}
+.wrapper .content .container .block1 .container .row2 .info2 .subrow .text p {
+  font-family: 'PT Serif';
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+  color: #696767;
+  color: #fff;
+  padding: 40px 0 0 40px;
+}
+.wrapper .content .container .block2 {
+  background-color: #f3f0e9;
+}
+.wrapper .content .container .block2 .container {
+  padding: 70px 130px 100px;
+}
+.wrapper .content .container .block2 .container .title {
+  font-family: 'Unna';
+  font-size: 36px;
+  line-height: 48px;
+  text-align: justify;
+  columns: #4d4d4d;
+  line-height: 40px;
+}
+.wrapper .content .container .block2 .container ul {
+  padding: 20px 0 0 0;
+}
+.wrapper .content .container .block2 .container ul .block2__2 {
+  display: flex;
+  padding: 20px 0 0 0;
+}
+.wrapper .content .container .block2 .container ul .block2__2 img {
+  width: 12px;
+  height: 12px;
+  margin: 2px 30px 0 0;
+}
+.wrapper .content .container .block2 .container ul .block2__2 li {
+  font-family: 'PT Serif';
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+  color: #696767;
+}
+.wrapper .content .container .end {
+  height: 337px;
+}
+.wrapper .content .container .end .end__block {
+  background-color: #39363D;
+  padding: 80px 164px;
+  font-family: 'Unna';
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 41px;
+}
+.wrapper .content .container .end .end__block .end__row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 30px 0;
+}
+.wrapper .content .container .end .end__block .end__row .end__img {
+  width: 81px;
+  height: 66px;
+}
+.wrapper .content .container .end .end__block .end__row nav a {
+  color: #fff;
+  padding: 0 0 0 50px;
+}
+.wrapper .content .container .end .end__block .end__row2 {
+  color: #f2f2f2;
+  text-align: center;
+}
+.wrapper .content .container .end .end__block .end__row2 .row__c {
+  padding: 0 16px;
+  border-right: 1px solid #fff;
+}
+.wrapper .content .container .end .end__block .end__row2 .row__c:last-child {
+  border: none;
+}
+.wrapper .content .container .footer {
+  height: 65px;
+}
+.wrapper .content .container .footer .footer__row {
+  padding: 12px 164px;
+  background-color: #181818;
+  color: #fff;
+  font-family: 'Unna';
+  font-size: 16px;
+  line-height: 41px;
+  display: flex;
+  justify-content: space-between;
+}

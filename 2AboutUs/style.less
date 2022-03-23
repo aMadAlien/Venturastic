@@ -1,0 +1,480 @@
+@import url(/frames.less);
+
+
+// переменные
+@black: #4d4d4d;
+@blue: #009CC4;
+@beige: #f3f0e9;
+
+// миксины
+.blue__item{
+   width: 2px;
+   display: block;
+   height: 66px;
+   background: @blue;
+   flex: 0 0 2px;
+}
+.s_text{
+   font-family: 'PT Serif';
+   font-size: 16px;
+   line-height: 24px;
+   text-align: justify;
+   color: #696767;
+}
+
+
+
+
+
+.wrapper {
+   min-width: 1440px;
+   min-height: 100%;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   .content {
+      flex: 1 1 auto;
+      .container {
+         width: 1440px;
+         margin: 0 auto;
+         .header {
+            font-family: 'Montserrat';
+            font-weight: 500;
+            background: #fff;
+            height: 134px;
+            .header__row {
+               padding: 13px 56px;
+               display: flex;
+               justify-content: space-between;
+               .header__img {
+               width: 133px;
+               height: 108px;
+               }
+
+               nav {/**********стили навигации в header**********/
+                  display: flex;
+                  a {
+                     display: inline-block;
+                     font-size: 16px;
+                     line-height: 22.4px;
+                     letter-spacing: 0.85px;
+                     text-transform: uppercase;
+                     margin: 50px 18px;
+                     color: #4d4d44;
+                     transition: all .5s linear;
+                     
+                     &:hover {/* стили для кнопок навигации в header при наведении */
+                        color: #009CC4;
+                        transform: scale(1.1);
+                        -webkit-text-stroke: 1px #009CC4;
+                        text-shadow: 1px 3px 5px #044758;
+                     }
+                     
+                     &:nth-child(5) {/* стили для кнопки навигации в header, страница которой включена */
+                        font-size: 18px;
+                        color: #009CC4;
+                        -webkit-text-stroke: 1px #009CC4;
+                        text-shadow: 1px 3px 10px #044758;
+                     }
+                     
+                     &:hover:nth-child(5) {/* для навигации header и footer */
+                        transform: none;
+                        cursor: default;
+                     }
+                  }
+               }
+            }
+         // header
+         }
+
+
+
+         .special {
+            position: relative;
+            height: 540px;
+            img{
+               width: 1440px;
+               position: absolute;
+               top: 0;
+               left: 0;
+            }
+            .special__title {
+               font-family: 'Unna';
+               font-size: 62px;
+               line-height: 74px;
+               color: #fff;
+               position: relative;
+               z-index: 1;
+               padding: 240px 310px 235px 855px;
+            }
+         // special
+         }
+
+
+
+
+
+         .block{
+            height: 965px;
+            .block__container{
+               padding: 128px 134px 100px 123px;
+               .block__row{
+                  display: flex;
+                  img{
+                     width: 560px;
+                     height: 400px;
+                     margin: 0 73px 0 0;
+                  }
+                  .info{
+                     margin: 0 0 0 74px;
+                     .title{
+                        font-family: 'Unna';
+                        font-size: 36px;
+                        line-height: 49px;
+                        text-align: justify;
+                        color: #313335;
+                        margin: 0 0 34px 0;
+                     }
+                     .items{
+                        display: flex;
+                        .item{
+                           .blue__item();
+                        };
+                        .text{
+                           .s_text();
+                           padding: 0 0 50px 40px;
+                        }
+                     }
+                  }
+               }
+               .block__text{
+                  p{
+                     .s_text();
+                     padding: 0 0 50px 0;
+                  }
+               }
+            }
+         }
+
+
+
+
+         .image{
+            img{
+               height: 400px;
+            }
+         }
+
+
+
+
+
+         // миксины для 2 блока
+         .bl2_title{
+            font-size: 'Unna';
+            font-size: 36px;
+            line-height: 40px;
+            color: @black;
+            margin: 0 0 40px 0;
+         }
+         .big_title{
+            .title{.bl2_title();}
+            .items{
+               display: flex;
+               padding: 0 0 40px 0;
+               .item{.blue__item();margin: 0 40px 0 0}
+               .text{.s_text(); &:last-child{padding: 0;}}
+            }
+            .text{
+               .s_text(); 
+               padding: 0 0 40px 40px;
+               &:last-child{padding: 0 0 0 40px;}
+            }
+            padding: 0 0 100px 0;
+            &:last-child{padding: 0;}
+         }
+         
+
+
+
+
+
+         .block2{
+            margin: 100px 130px;
+            .block__columns{
+               display: flex;
+               justify-content: space-between;
+               .column1{
+                  width: 500px;
+                  margin: 0 83px 0 0;
+                  .philosophy{.big_title();}
+                  .strengths{.big_title();}
+               }
+               .column2{
+                  width: 500px;
+                  margin: 0 0 0 83px;
+                  .belief{.big_title();}
+                  .strategy{.big_title();}
+               }
+            }
+         }
+
+
+
+
+
+
+         .block3{
+            height: 800px;
+            background-color: @beige;
+            .block3__container{
+               padding: 70px 130px;
+               .title{
+                  font-family: 'Unna';
+                  font-size: 52px;
+                  line-height: 49px;
+                  color: @black;
+                  text-align: center;
+               }
+               .block3__row1{
+                  margin: 50px 0 10px 0;
+                  display: flex;
+                  justify-content: space-between;
+                  .row__column{
+                     width: 230px;
+                     img{
+                        width: 100px;
+                        height: 100px;
+                        margin: 0 65px 50px 65px;
+                     }
+                     .title{
+                        font-family: 'Unna';
+                        font-size: 36px;
+                        line-height: 35px;
+                        color: @black;
+                        text-align: center;
+                     }
+                  }
+               }
+               .block3__row2{
+                  display: flex;
+                  justify-content: space-between;
+                  .row__column{
+                     width: 230px;
+                     .item{
+                        width: 66px;
+                        display: block;
+                        height: 2px;
+                        background: @blue;
+                        flex: 0 0 2px;
+                        margin: 0px 82px 30px 82px;
+                     }
+                     .text{.s_text();}
+                  }
+               }
+            }
+         }
+
+
+
+
+
+
+         .block4{
+            height: 630px;
+            position: relative;
+            padding: 92px 128px 98px ;
+            img{
+               width: 1440px;
+               position: absolute;
+               top: 0;
+               left: 0;
+            }
+            .block4__container{
+               position: relative;
+               width: 1184px;
+               height: 440px;
+               background: rgba(255, 255, 255, 0.8);
+               border-radius: 18px;
+               z-index: 1;
+               display: flex;
+               .info{
+                  width: 482px;
+                  margin: 45px 66px 0 66px;
+                  .title{
+                     font-family: 'Unna';
+                     font-size: 62px;
+                     line-height: 53px;
+                     color: @black;
+                     margin: 0 0 38px 0;
+                  }
+                  .subtitle{
+                     font-family: 'PT Serif';
+                     font-size: 28px;
+                     line-height: 31px;
+                     color: @black;
+                  }
+               }
+               .text{
+                  width: 430px;
+                  margin: 45px 74px 0 66px;
+                  .s_text();
+                  p{
+                     padding: 0 0 38px 0;
+                     &:last-child{padding: 0;}
+                  }
+               }
+            }
+         }
+
+
+
+
+
+
+         .block5{
+            height: 1200px;
+            .container{
+               padding: 128px 135px 50px 123px;
+               .row1{
+                  display: flex;
+                  .column1{
+                     .title{
+                        width: 651px;
+                        font-family: 'Unna';
+                        font-size: 52px;
+                        line-height: 49px;
+                        color: @black;
+                        margin: 0 55px 42px 0;
+                        img{
+                           width: 620px;
+                           height: 620px;
+                        }
+                     }
+                  }
+                  .item{
+                     // margin: 0 42px 0 55px;
+                     .blue__item();
+                  }
+                  .text{
+                     p{
+                        .s_text();
+                        margin: 0 0 40px 42px;
+                     }
+                  }
+               }
+               .block5__title{
+                  font-family: 'Unna';
+                  font-size: 36px;
+                  line-height: 36px;
+                  text-align: justify;
+                  color: @black;
+                  margin: 70px 69px 40px;
+               }
+               .row2{
+                  margin: 0 36px 0 87px;
+                  .row2__1{
+                     display: flex;
+                     margin: 0 0 20px 0;
+                     img{
+                        width: 12px;
+                        height: 12px;
+                        margin: 2px 8px 0 0;
+                     }
+                     p{
+                        margin: 0 69px 0 0;
+                        &:last-child{margin: 0;}
+                     }
+                  }
+                  .row2__2{
+                     display: flex;
+                     img{
+                        width: 12px;
+                        height: 12px;
+                        margin: 2px 8px 0 0;
+                     }
+                     p{
+                        margin: 0 277px 0 0;
+                        &:last-child{margin: 0;}
+                     }
+                  }
+               }
+            }
+         }
+
+
+
+
+
+
+
+
+
+
+
+         .end {
+            height: 337px;
+            .end__block {
+               background-color: #39363D;
+               padding: 80px 164px;
+               font-family: 'Unna';
+               text-transform: uppercase;
+               font-size: 18px;
+               line-height: 41px;
+               .end__row {
+                  display: flex;
+                  justify-content: space-between;
+                  margin: 0 0 30px 0;
+                  .end__img {
+                     width: 81px;
+                     height: 66px;
+                  }
+                  nav{ 
+                     a {
+                     color: #fff;
+                     padding: 0 0 0 50px;
+                     }
+                  }
+               }
+               .end__row2 {
+                  color: #f2f2f2;
+                  text-align: center;
+                  .row__c {
+                     padding: 0 16px;
+                     border-right: 1px solid #fff;
+                     &:last-child {
+                        border: none;
+                     }
+                  }
+               }
+            }
+         }
+
+
+
+         .footer {
+            height: 65px;
+            .footer__row {
+               padding: 12px 164px;
+               background-color: #181818;
+               color: #fff;
+               font-family: 'Unna';
+               font-size: 16px;
+               line-height: 41px;
+
+               display: flex;
+               justify-content: space-between;
+            }
+         }
+
+
+
+
+
+
+      // container
+      }   
+   // content
+   }
+// wrapper
+}

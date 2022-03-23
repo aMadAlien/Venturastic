@@ -1,0 +1,267 @@
+@import url(/frames.less);
+
+
+// переменные
+@black: #4d4d4d;
+
+
+
+
+
+.wrapper {
+   min-width: 1440px;
+   min-height: 100%;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   .content {
+      flex: 1 1 auto;
+      .container {
+         width: 1440px;
+         margin: 0 auto;
+         .header {
+            font-family: 'Montserrat';
+            font-weight: 500;
+            background: #fff;
+            height: 134px;
+            .header__row {
+               padding: 13px 56px;
+               display: flex;
+               justify-content: space-between;
+               .header__img {
+               width: 133px;
+               height: 108px;
+               }
+
+               nav {/**********стили навигации в header**********/
+                  display: flex;
+                  a {
+                     display: inline-block;
+                     font-size: 16px;
+                     line-height: 22.4px;
+                     letter-spacing: 0.85px;
+                     text-transform: uppercase;
+                     margin: 50px 18px;
+                     color: @black;
+                     transition: all .5s linear;
+                     
+                     &:hover {/* стили для кнопок навигации в header при наведении */
+                        color: #009CC4;
+                        transform: scale(1.1);
+                        -webkit-text-stroke: 1px #009CC4;
+                        text-shadow: 1px 3px 5px #044758;
+                     }
+                     
+                     &:nth-child(4) {/* стили для кнопки навигации в header, страница которой включена */
+                        font-size: 18px;
+                        color: #009CC4;
+                        -webkit-text-stroke: 1px #009CC4;
+                        text-shadow: 1px 3px 10px #044758;
+                     }
+                     
+                     &:hover:nth-child(4) {/* для навигации header и footer */
+                        transform: none;
+                        cursor: default;
+                     }
+                  }
+               }
+            }
+         // header
+         }
+      
+         .special {
+            position: relative;
+            height: 540px;
+            img{
+               width: 1440px;
+               position: absolute;
+               top: 0;
+               left: 0;
+            }
+            .special__title {
+               font-family: 'Unna';
+               font-size: 62px;
+               line-height: 74px;
+               color: #fff;
+               position: relative;
+               z-index: 1;
+               padding: 224px 130px 250px 580px;
+            }
+         // special
+         }
+         
+
+         .main{
+            .text{// куски текста вверху и внизу
+               height: 340px;
+               .text__row{
+                  padding: 100px 130px;
+                  p{
+                     font-family: 'Unna';
+                     font-size: 36px;
+                     line-height: 48px;
+                     text-align: justify;
+                     color: @black;
+                  }
+               }
+            }
+
+
+
+
+
+            // миксины
+            .block_title{
+               font-family: 'Unna';
+               font-size: 36px;
+               line-height: 48px;
+               color: @black;
+               padding: 0 0 18px 0;
+            }
+            .block_subtitle{
+               font-family: 'Unna';
+               font-size: 24px;
+               line-height: 24px;
+               text-align: justify;
+               padding: 0 0 0 40px;
+               color: @black;
+            }
+            .block_text{
+               font-family: 'TP Serif';
+               font-size: 16px;
+               line-height: 24px;
+               text-align: justify;
+               color: @black;
+               p{padding: 0 10px 40px 40px;}
+            }
+            .block_items{
+               display: flex;
+            }
+            .block_item{
+               width: 2px;
+               display: block;
+               height: 66px;
+               background: #009CC4;
+            }
+            img{
+               width: 560px;
+               height: 400px;
+            }
+
+
+
+
+
+
+
+            .block1{
+               height: 700px;
+               background: #F3F0E9;
+               .row{
+                  display: flex;
+                  padding: 100px 130px;
+                  .info{
+                     padding: 0 147px 0 0;
+                     .title{.block_title();}
+                     .items{
+                        .block_items();
+                        .item{.block_item();}
+                        .subtitle{.block_subtitle();}
+                     }
+                     .text{.block_text();}
+                  }
+               }
+            }
+
+
+
+            .block2{
+               height: 600px;
+               .row{
+                  display: flex;
+                  padding: 100px 130px;
+                  .info{
+                     padding: 0 0 0 147px;
+                     .title{.block_title();}
+                     .items{
+                        .block_items();
+                        .item{.block_item();}
+                        .text{.block_text();}
+                     }
+                  }
+               }
+            }
+
+
+
+         // main
+         }
+         
+
+
+         .end {
+            height: 337px;
+            .end__block {
+               background-color: #39363D;
+               padding: 80px 164px;
+               font-family: 'Unna';
+               text-transform: uppercase;
+               font-size: 18px;
+               line-height: 41px;
+               .end__row {
+                  display: flex;
+                  justify-content: space-between;
+                  margin: 0 0 30px 0;
+                  .end__img {
+                     width: 81px;
+                     height: 66px;
+                  }
+                  nav{ 
+                     a {
+                     color: #fff;
+                     padding: 0 0 0 50px;
+                     }
+                  }
+               }
+               .end__row2 {
+                  color: #f2f2f2;
+                  text-align: center;
+                  .row__c {
+                     padding: 0 16px;
+                     border-right: 1px solid #fff;
+                     &:last-child {
+                        border: none;
+                     }
+                  }
+               }
+            }
+         }
+
+
+
+         .footer {
+            height: 65px;
+            .footer__row {
+               padding: 12px 164px;
+               background-color: #181818;
+               color: #fff;
+               font-family: 'Unna';
+               font-size: 16px;
+               line-height: 41px;
+
+               display: flex;
+               justify-content: space-between;
+            }
+         }
+
+
+
+
+
+
+      // container
+      }   
+   // content
+   }
+// wrapper
+}
